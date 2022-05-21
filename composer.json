@@ -1,0 +1,69 @@
+{
+    "name": "crasyhorse/phpunit2xray",
+    "description": "PHP-Unit extension that reports its data in Idera Inc. Xray compatible JSON format",
+    "version": "0.1.0-beta",
+    "keywords": [
+        "Atlassian",
+        "Jira",
+        "PHPUnit",
+        "Reporter",
+        "Xray"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weidinger",
+            "email": "CrasyHorse@gmx.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CrasyHorse\\Phpunit2xray\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CrasyHorse\\Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://git@github.com/crasyhorse/phpunit2xray.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@github.com/crasyhorse/phpdoc-parser.git"
+        }
+    ],
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "ext-json": "*",
+        "adbario/php-dot-notation": "2.x-dev",
+        "crasyhorse/phpdoc-parser": "dev-master",
+        "nesbot/carbon": "^2.58.0",
+        "opis/json-schema": "^2.3.0",
+        "marc-mabe/php-enum": "^4.7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.23.0",
+        "friendsofphp/php-cs-fixer": "^3.8.0"
+    },
+    "scripts": {
+        "test:all": [
+            "@test:prepare",
+            "@test:unit",
+            "@test:feature"
+        ],
+        "test:prepare": "vendor/bin/phpunit --testsuite Prepare -c phpunit_prepare.xml --no-coverage --color=always || true",
+        "test:unit": "vendor/bin/phpunit --testsuite Unit --color=always || true",
+        "test:feature": "vendor/bin/phpunit --testsuite Feature --no-coverage --color=always",
+        "test:unit-f": "vendor/bin/phpunit --testsuite Unit --filter",
+        "psalm": "vendor/bin/psalm",
+        "psalm-c": "vendor/bin/psalm --clear-cache",
+        "psalm-i": "vendor/bin/psalm --show-info=true"
+    },
+    "minimum-stability": "dev"
+}
