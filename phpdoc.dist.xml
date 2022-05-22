@@ -6,6 +6,15 @@
         xsi:noNamespaceSchemaLocation="data/xsd/phpdoc.xsd"
 >
     <title>CrasyHorse / PHP-Unit 2 Xray</title>
+    <parser>
+        <target>build</target>
+    </parser>
+    <transformer>
+        <target>docs</target>
+    </transformer>
+    <transformations>
+        <template name="vendor/fr3nch13/phpdoc-markdown/data/templates/markdown"/>
+    </transformations>    
     <paths>
         <output>docs/api</output>
         <cache>docs/cache</cache>
