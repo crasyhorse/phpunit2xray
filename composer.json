@@ -59,7 +59,7 @@
             "@test:unit",
             "@test:feature"
         ],
-        "phpcs": "vendor/bin/phpcs src/*",
+        "phpcs": "vendor/bin/phpcs --standard=PSR12 src",
         "phpdoc": "vendor/bin/phpDocumentor.phar",
         "psalm": "vendor/bin/psalm",
         "psalm-c": "vendor/bin/psalm --clear-cache",
