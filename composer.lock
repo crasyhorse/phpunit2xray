@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bd334f246446309a1dace65f24ef3b4",
+    "content-hash": "c308c0199d7feb4a14bd3a83886d72cc",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -337,6 +337,49 @@
                 }
             ],
             "time": "2022-05-14T14:58:31+00:00"
+        },
+        {
+            "name": "onspli/phpdoc-markdown",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onspli/phpdoc-markdown.git",
+                "reference": "866150dbf3cea9a4be234467e40a6ba893cd5545"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onspli/phpdoc-markdown/zipball/866150dbf3cea9a4be234467e40a6ba893cd5545",
+                "reference": "866150dbf3cea9a4be234467e40a6ba893cd5545",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Šplíchal",
+                    "email": "ondrej.splichal@gmail.com"
+                },
+                {
+                    "name": "Carl Vuorinen",
+                    "email": "carl.vuorinen@gmail.com"
+                }
+            ],
+            "description": "Generate documentation in Markdown format so it can be published in GitHub.",
+            "keywords": [
+                "documentation",
+                "markdown",
+                "phpDocumentor",
+                "phpdoc"
+            ],
+            "support": {
+                "issues": "https://github.com/onspli/phpdoc-markdown/issues",
+                "source": "https://github.com/onspli/phpdoc-markdown/tree/0.3.3"
+            },
+            "time": "2021-08-15T19:04:40+00:00"
         },
         {
             "name": "opis/json-schema",
@@ -5503,7 +5546,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "adbario/php-dot-notation": 20,
-        "crasyhorse/phpdoc-parser": 20
+        "crasyhorse/phpdoc-parser": 20,
+        "onspli/phpdoc-markdown": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
