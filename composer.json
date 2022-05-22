@@ -47,7 +47,6 @@
         "marc-mabe/php-enum": "^4.7.0"
     },
     "require-dev": {
-        "fr3nch13/phpdoc-markdown": "^1.0.6",
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.23.0",
         "friendsofphp/php-cs-fixer": "^3.8.0"
