@@ -54,18 +54,12 @@
         "friendsofphp/php-cs-fixer": "^3.8.0"
     },
     "scripts": {
-        "test:all": [
-            "@test:prepare",
-            "@test:unit",
-            "@test:feature"
-        ],
         "phpcs": "vendor/bin/phpcs --standard=PSR12 src",
         "phpdoc": "vendor/bin/phpDocumentor.phar",
         "psalm": "vendor/bin/psalm",
         "psalm-c": "vendor/bin/psalm --clear-cache",
         "psalm-i": "vendor/bin/psalm --show-info=true",
-        "test:feature": "vendor/bin/phpunit --testsuite Feature --no-coverage --color=always",
-        "test:prepare": "vendor/bin/phpunit --testsuite Prepare -c phpunit_prepare.xml --no-coverage --color=always || true",
+        "test:integration": "vendor/bin/phpunit --testsuite Integration --no-coverage --color=always",
         "test:unit": "vendor/bin/phpunit --testsuite Unit --color=always || true",
         "test:unit-f": "vendor/bin/phpunit --testsuite Unit --filter"
     },
