@@ -10,7 +10,7 @@
         "Xray"
     ],
     "type": "library",
-    "license": "MIT",
+    "license": "BSD 3-Clause License",
     "authors": [
         {
             "name": "Florian Weidinger",
