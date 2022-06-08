@@ -1,6 +1,6 @@
 {
     "name": "crasyhorse/phpunit2xray",
-    "description": "PHP-Unit extension that reports its data in Idera Inc. Xray compatible JSON format",
+    "description": "PHP-Unit extension that reports its data in Idera Inc. Xray compatible JSON format.",
     "version": "0.1.0-beta",
     "keywords": [
         "Atlassian",
